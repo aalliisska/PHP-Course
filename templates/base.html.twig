@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="style.css"/>
+    {% endblock %}
+</head>
+
+<body>
+    <div id="register_user">{% block register_user %}{% endblock %}</div>
+    <div id="view_user">{% block view_user %}{% endblock %}</div>
+    <div id="view_users">{% block view_users %}{% endblock %}</div>
+    <div id="delete_user">{% block delete_user %}{% endblock %}</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Deleting users{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block delete_user %}
+  <h1>User deleted</h1>
+  <a href="/view_users">Back to main page</a>
+{% endblock %}
